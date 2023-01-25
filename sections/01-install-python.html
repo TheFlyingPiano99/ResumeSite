@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python kurzus - Telepítés</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/custom.css"  media="screen,projection"/>
+</head>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right">
+                <li><a href="../index.html" class="collection-item">Kezdőoldal</a></li>
+                <li><a href="02-ide.html" class="collection-item">Következő fejezet</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <h1>
+            Telepítsünk!
+        </h1>
+        <div class="card">
+            <div class="card-content">
+                <p>
+                    Ahhoz, hogy használni tudjuk a Pythont a gépünkön, be kell installálnunk azt.
+                    Ehhez látogassunk el a <a href="https://www.python.org/" target="_blank">Python hivatalos weboldalára</a>!
+                    Navigáljunk a <b>Downloads</b> fülre! Ugyan itt egy nagyon csábító gomb kínálja magát, amivel elindítható a letöltés,
+                    azt javaslom, hogy ne engedjünk azonnal a csábításnak. 
+                    Először nézzük meg a jóval kisebb <b>Python for Windows</b> linket, ami közvetlenül a nagy sárga gomb alatt található.
+                    A link egy hosszú listához irányít. Ezek különböző Python verziók letöltési linkjei.
+                    Itt fel merül a kérdés: "Minek ennyi verzió? Miért nem elég a legújabbat támogatni?"
+                    A válasz erre az, hogy a különböző verziók esetenként nem teljesen kompatibilisek.
+                    Egy régebbi verzióra írt program lehet, hogy már nem fut az újabb verzióval.
+                    A megfelelő verzió használatával elkerülhetőek a kompatibilitási problémák.
+                    Láthatjuk, hogy a verziók három egymásután írt, pontokkal elválasztott számból állnak. Például 3.10.6.
+                    Ez egy megszokott konvenció a szoftverek változatainak megkülönböztetésére. Az első szám a <b>MAJOR</b> verzió, a második a <b>MINOR</b> verzió és a harmadik a <b>PATCH</b> szám.
+                    Ezek csökkenő nagyságrendű frissítéseket jelölnek. A témáról részletesebben <a href="https://semver.org/" target="_blank">ezen a linken</a> olvashatsz.
+                    Python esetében számtalan különböző verzió érhető el, de ezek alapvetően két nagy verzió valamilyen alverziói.
+                    A két nagy verzió a <b>Python 2</b> és <b>Python 3</b>. Ezek között vannak jelentősebb szintaktikai eltérések. A 2.X.X verziók egymással jobbára kompatibilisek. Ez igaz a 3.X.X verziókra is.
+                    Máris sok volt a verziókból? Akkor kattintsunk a <b>Latest Python 3 Release - Python 3.10.6</b> linkre.
+                    Ez ugyanaz a verzió, mint amit a nagy sárga gomb kínált a legelején. Most viszont már okosabbak lettünk a verziózás területén.
+                    Görgessünk le a <b>files</b> szekcióhoz. Itt a legalsó, <b>Windows installer (64-bit)</b> lehetőséget válasszuk!
+                    (Megjegyzés: Amennyiben 32 bites rendszerünk van, akkor az eggyel feljebbi, 32 bites változatot válasszuk!
+                    A Windows változatáról a Start menü / Settings / System / About / Device specifications / System type ad pontos információt.)
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p>
+                    A megfelelő installálót futtassuk letöltés után!
+                    Válasszuk az <b>Install now</b> lehetőséget. Ez az alapértelmezett helyre fog telepíteni, és felrak néhány kiegészítő segédprogramot (PIP, IDLE).
+                    Az installáció végén fel fogja kínálni a <b>Disable path length limit</b> lehetőséget. Erre is kattintsunk rá!
+                    Adminisztrátori jogosultság megadása után (értsd jóvá kell hagyni egy felugró dialógus ablakban) elvégzi ezt a beállítást is.
+                    Ez után bezárhatjuk a telepítőt a <b>close</b> gombra kattintva.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p>
+                    Miután befejeződött a telepítés. Start menüből elérhetőnek kell lennie egy <b>Python 3.10 (64-bit)</b> programnak.
+                    Ezt futtatva egy konzol nyílik. Itt máris lehet python utasításokat írni.
+                    Próbáljuk meg begépelni a <b>print("Hello World!")</b> sort, majd adjunk Entert. Ez a következő sorba kiírja az üdvözletet.
+                    Íme az első Python programunk! Ez a konzol azonban elég fapados. Nem is fogjuk többet használni.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p>
+                    Időzzünk még el egy rövid ideig a frissen installált Pythonunk vizsgálgatásával!
+                    Zárjuk be az ablakot, majd keressünk rá ismét a <b>Python 3.10 (64-bit)</b> alkalmazásra a Start menüben!
+                    Most ne indítsuk el, hanem jobb klikk és <b>Open file location</b>. Most mindezt mégegyszer: A megnyílt fájlböngészőben jobb klikk a Python 3.10 (64-bit)-en, Open file location.
+                    (Azért volt szükség ennek kétszeri elvégzésére, mert a Start menüben csak egy hivatkozás hovatkozása szerepel.)
+                    Végre megérkeztünk a Python installáció helyére. Itt már egy <b>python.exe</b> indítót láthatunk. Ez az a futtatható állomány,
+                    ami a Start menüben látott hivatkozásra kattintva elindul. Érdekes megfigyelni, hogy ennek nevében már nem szerepel a verzió. Inkább a könyvtár neve <b>Python310</b>.
+                    Ebbe a mappába fognak kerülni a további Python programkönyvtárak, amelyeket majd a későbbiekben töltünk le.
+                    Hogyha egy kicsit szétnézünk itt, láthatjuk, hogy van egy <b>Doc</b> alkönyvtár, amiben egy fájl található. Ezt megnyitva egy navigálható dokumentációt kapunk. Ez esetleg hasznos lehet.
+                    Mondjuk érdemesebb <a href="https://docs.python.org/3/" target="_blank">a következő linkhez</a> fordulni segítségért.
+                </p>
+            </div>
+        </div>
+        <div class="center-align">
+            <div class="row">
+                <a href="02-ide.html" class="waves-effect waves-light btn-large">Következő fejezet</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+</body>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col 16 s12">
+                <h5 class="white-text">Linkek</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.python.org/" target="_blank">Python nyelv</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm IDE</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        © 2022 Simon Zoltán
+        </div>
+    </div>
+</footer>
+</html>
