@@ -1,2 +1,2 @@
-# PersonalWebpage
-This is the webpage collecting information about myself.
+# PersonalWebsite
+This is the website collecting information about myself.
