@@ -1,0 +1,1 @@
+npx tailwindcss -i src\css\custom.css -o build\css\tailwind-out.css --watch
