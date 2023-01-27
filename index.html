@@ -3,22 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+  </style>
   <link href="build/css/tailwind-out.css" rel="stylesheet">
 </head>
+<header>
+    <nav class="bg-primary px-6 h-8">
+      <a class="float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8 text-v-center
+      text-invtextcolor hover:text-complementer hover:bg-darkprimary selection:bg-brown" href="">
+        Menu
+      </a>
+    </nav>
+</header>
 <body>
-  <div class="text-3xl font-bold">Zoltán Simon</div>
-  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-    <div class="text-xl font-medium text-black">Welcome to my website!</div>
-    <p>
-      Hi, I'm Zoli! I study computer engineering at the Budapest University of Technology and Economics.
-      Having successfully completed the undergraduate program I am currently pursuing master's degree.
-      My main interests are computer graphics and creating video games.
-      I also like everything creative such as writing my own music.
-      If you would like to learn more about my work, please feel free to explore this site.
-    </p>
+  <div class="bg-bgcolor py-6 w-full">
+    <div class="sm:mx-[5%] mb-6 mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 text-center bg-lightbgcolor rounded-md shadow-md">
+      <h1 class="font-mono text-xl text-center font-medium text-darktextcolor selection:bg-selectcolor mt-2 mb-4 tracking-widest">Welcome to my website!</h1>
+      <img src="resources/profilZoli.jpg" alt="profil_picture" class="w-[6rem] rounded-full ring ring-lightprimary mx-auto mb-6">
+      <p class="font-mono text-textcolor selection:bg-selectcolor text-justify mb-8 leading-relaxed tracking-wider">
+        Hi, I'm Zoli! I study computer engineering at the Budapest University of Technology and Economics.
+        Having successfully completed the undergraduate program I am currently pursuing master's degree.
+        My main interests are computer graphics and creating video games.
+        I also like everything creative such as writing my own music.
+        If you would like to learn more about my work, please feel free to explore this site.
+      </p>
+      <a class="font-mono bg-primary text-invtextcolor hover:text-complementer hover:bg-darkprimary select-none
+       focus:outline-none focus:ring focus:text-invtextcolor rounded-xl shadow-sm px-3 pt-[0.20rem] pb-[0.3rem] align-text-bottom tracking-wider"
+      href="src/content/biography.html">
+        Biography
+      </a>
+    </div>
   </div>
-  <a class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..." href="src/content/biography.html">
-    Biography
-  </a>
+
+  <script type="text/javascript" src="src/scripts/dark-theme.js"></script>
 </body>
-</html>
+<footer>
+  <div class="bg-lightprimary w-full">
+    <div class="bg-primary h-4 w-full"></div>
+    <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] mt-4 pb-[2rem]">
+      <h3 class="font-mono font-medium text-textcolor selection:bg-selectcolor mb-3 tracking-widest">
+        Contacts
+      </h3>
+      <ul class="list-disc text-lighttextcolor  text-xs tracking-wider">
+        <li class="list-item mb-2"><a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://github.com/TheFlyingPiano99">github.com/TheFlyingPiano99</a></li>
+        <li class="list-item mb-2"><a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="mailto:zoltan.simon@edu.bme.hu">E-mail</a></li>
+      </ul>
+      <p class="text-center pt-6 font-extralight text-lighttextcolor selection:bg-selectcolor text-xs font-mono tracking-wider">Zoltán Simon (2023)</p>
+    </div>
+  </div>
+</footer>
+</html> 
