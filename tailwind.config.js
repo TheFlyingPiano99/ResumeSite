@@ -7,6 +7,9 @@ const brown = '#AE431E'
 const olive = '#8A8635'
 const beige = '#E9C891'
 
+const bobagreen = '#9FC088'
+const darkbeige  = '#E8C07D'
+
 module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html"],
   plugins: [
@@ -19,13 +22,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: brick,
+        primary: bobagreen,
         lightprimary: beige,
-        darkprimary: brown,
-        complementer: olive,
+        darkprimary: olive,
+        complementer: darkbeige,
         lightcomplementer: olive,
         bgcolor: colors.gray[200],
-        darkbgcolor: colors.gray[300],
+        darkBgColor1: colors.gray[600],
         lightbgcolor: colors.gray[100],
         selectcolor: olive,
         textcolor: colors.gray[600],
