@@ -7,13 +7,31 @@
     @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
   </style>
   <link href="build/css/tailwind-out.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
 </head>
 <header>
     <nav class="bg-primary px-6 h-8">
-      <a class="float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8 text-v-center
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8 text-v-center
       text-invtextcolor hover:text-complementer hover:bg-darkprimary selection:bg-brown" href="">
         Menu
-      </a>
+      </button>
     </nav>
 </header>
 <body>
@@ -100,6 +118,7 @@
   </div>
 
   <script type="text/javascript" src="src/scripts/dark-theme.js"></script>
+  <script type="text/javascript" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 <footer>
   <div class="bg-lightbgcolor w-full">

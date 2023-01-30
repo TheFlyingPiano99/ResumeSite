@@ -11,9 +11,13 @@ const bobagreen = '#9FC088'
 const darkbeige  = '#E8C07D'
 
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: [
+    "./src/**/*.{html,js}", "./index.html",
+    "./node_modules/flowbite/**/*.js"
+  ],
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin')
   ],
   darkMode: ['class'],   // The dark mode is depending on the presence of 'dark' class. Manageg via JS
   theme: {
