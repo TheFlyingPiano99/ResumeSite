@@ -13,7 +13,6 @@ const darkbeige  = '#E8C07D'
 module.exports = {
   content: [
     "./src/**/*.{html,js}", "./index.html",
-    "./node_modules/flowbite/**/*.js"
   ],
   plugins: [
     require('@tailwindcss/typography'),

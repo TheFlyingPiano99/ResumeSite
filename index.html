@@ -6,25 +6,31 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
   </style>
-  <link href="build/css/tailwind-out.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <link href="build/css/tailwind-out.css" rel="stylesheet"/>
+  <link href="src/css/flowbite.min.css" rel="stylesheet"/>
 </head>
 <header>
     <nav class="bg-primary px-6 h-8">
       <!-- Dropdown menu -->
-      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700">
         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+            <a href="src/content/biography.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Biography</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+            <a href="src/content/research.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Research</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+            <a href="src/content/programming-projects.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+            <a href="src/content/teaching.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Teaching</a>
+          </li>
+          <li>
+            <a href="src/content/music.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Music</a>
+          </li>
+          <li>
+            <a href="src/content/other.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Other</a>
           </li>
         </ul>
       </div>
@@ -118,7 +124,7 @@
   </div>
 
   <script type="text/javascript" src="src/scripts/dark-theme.js"></script>
-  <script type="text/javascript" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script type="text/javascript" src="src/scripts/flowbite.min.js"></script>
 </body>
 <footer>
   <div class="bg-lightbgcolor w-full">
@@ -141,7 +147,7 @@
             </li>
           </ul>
           </div>
-        <div class="mx-auto flex-auto grow ml-8">
+        <div class="mx-auto flex-auto grow pl-6">
           <h3 class="font-mono font-medium text-textcolor selection:bg-selectcolor mb-3 tracking-widest">
             Association
           </h3>
