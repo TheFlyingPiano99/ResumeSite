@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="green">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,47 +13,46 @@
     <nav class="bg-primary px-6 h-8">
       <!-- Dropdown menu -->
       <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+        <ul class="py-2 text-sm text-textColor dark:text-invTextColor" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="../../index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+            <a href="../../index.html" class="dropdown-item">Home</a>
           </li>
           <li>
-            <a href="./biography.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Biography</a>
+            <a href="./biography.html" class="dropdown-item">Biography</a>
           </li>
           <li>
-            <a href="./research.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Research</a>
+            <a href="./research.html" class="dropdown-item">Research</a>
           </li>
           <li>
-            <a href="./programming-projects.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming</a>
+            <a href="./programming-projects.html" class="dropdown-item">Programming</a>
           </li>
           <li>
-            <a href="./teaching.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Teaching</a>
+            <a href="./teaching.html" class="dropdown-item">Teaching</a>
           </li>
           <li>
-            <a href="./music.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Music</a>
+            <a href="./music.html" class="dropdown-item">Music</a>
           </li>
           <li>
-            <a href="./other.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Other</a>
+            <a href="./other.html" class="dropdown-item">Other</a>
           </li>
         </ul>
       </div>
-      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8 text-v-center
-      text-invtextcolor hover:text-complementer hover:bg-darkprimary selection:bg-brown" href="">
+      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="dropdown-btn" href="">
         Menu
       </button>
     </nav>
+    <div class="h-1 bg-lightPrimary"></div>
 </header>
 <body>
-  <div class="bg-bgcolor py-6 w-full">
-    <div class="mb-8 sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 text-center bg-lightbgcolor rounded-md shadow-md">
-      <img src="../../resources/profilZoli.jpg" alt="profil_picture" class="w-[6rem] rounded-full ring ring-lightprimary shadow-lg mx-auto mb-2">
-      <h2 class="font-mono font-medium text-textcolor mb-4">Zoltán Simon</h2>
-      <h1 class="font-mono text-xl text-center font-medium text-darktextcolor selection:bg-selectcolor mt-2 mb-4 tracking-widest">Research</h1>
-      <p class="font-mono text-textcolor selection:bg-selectcolor text-justify mb-8 leading-relaxed tracking-wider">
-        Introduction...
+  <div class="bg-bgColor py-6 w-full">
+    <div class="card">
+      <img class="round-img" src="../../resources/profilZoli.jpg" alt="profil_picture">
+      <h2 class="title2">Zoltán Simon</h2>
+      <h1 class="title1">Research</h1>
+      <p class="card-content">
+        ...
       </p>
-      <a class="font-mono bg-primary text-invtextcolor hover:text-complementer hover:bg-darkprimary select-none
-       focus:outline-none focus:ring focus:text-invtextcolor rounded-xl shadow-sm px-3 pt-[0.20rem] pb-[0.3rem] align-text-bottom tracking-wider mx-auto"
+      <a class="round-btn"
       href="../../index.html">
         Home
       </a>
@@ -64,44 +63,44 @@
   <script type="text/javascript" src="../scripts/flowbite.min.js"></script>
 </body>
 <footer>
-  <div class="bg-lightbgcolor w-full">
+  <div class="bg-lightBgColor w-full">
     <div class="bg-primary h-4 w-full"></div>
-    <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 bg-lightbgcolor">
+    <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 bg-lightBgColor">
       <div class="flex">
         <div class="mx-auto flex-auto grow">
-          <h3 class="font-mono font-medium text-textcolor selection:bg-selectcolor mb-3 tracking-widest">
+          <h3 class="font-mono font-medium text-textColor selection:bg-lightPrimary mb-3 tracking-widest">
             Contact
           </h3>
-          <ul class="list-disc text-lighttextcolor  text-xs tracking-wider">
+          <ul class="list-disc text-lightTextColor  text-xs tracking-wider">
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://github.com/TheFlyingPiano99">github.com/TheFlyingPiano99</a>
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://github.com/TheFlyingPiano99">github.com/TheFlyingPiano99</a>
             </li>
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://soundcloud.com/flying-piano-842623231">soundcloud.com/flying-piano</a>
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://soundcloud.com/flying-piano-842623231">soundcloud.com/flying-piano</a>
             </li>
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="mailto:zoltan.simon@edu.bme.hu">send E-mail</a>
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="mailto:zoltan.simon@edu.bme.hu">send E-mail</a>
             </li>
           </ul>
-        </div>
+          </div>
         <div class="mx-auto flex-auto grow pl-6">
-          <h3 class="font-mono font-medium text-textcolor selection:bg-selectcolor mb-3 tracking-widest">
+          <h3 class="font-mono font-medium text-textColor selection:bg-lightPrimary mb-3 tracking-widest">
             Association
           </h3>
-          <ul class="list-disc text-lighttextcolor  text-xs tracking-wider">
+          <ul class="list-disc text-lightTextColor  text-xs tracking-wider">
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://www.bme.hu/?language=en">Budapest University of Technology and Economics</a>
+              <a class="hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.bme.hu/?language=en">Budapest University of Technology and Economics</a>
             </li>
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://www.vik.bme.hu/en/">Faculty of Electrical Engineering and Informatics</a>
+              <a class="hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.vik.bme.hu/en/">Faculty of Electrical Engineering and Informatics</a>
             </li>
             <li class="list-item mb-2">
-              <a class=" hover:text-selectcolor selection:bg-lighttextcolor selection:hover:bg-gray-500 font-mono" href="https://www.iit.bme.hu/?language=en">Department of Control Engineering and Information Technology</a>
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.iit.bme.hu/?language=en">Department of Control Engineering and Information Technology</a>
             </li>
           </ul>
         </div>
       </div>
-      <p class="text-center pt-11 font-extralight text-lighttextcolor selection:bg-selectcolor text-xs font-mono tracking-wider">Zoltán Simon (2023)</p>
+      <p class="text-center pt-11 font-extralight selection:bg-lightPrimary text-lightTextColor selection:bg-selectColor text-xs font-mono tracking-wider">Zoltán Simon (2023)</p>
     </div>
   </div>
 </footer>

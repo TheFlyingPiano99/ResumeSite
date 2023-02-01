@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+    Color themes:
+*/
+@layer base {
+    [data-theme="green"] {
+        --color-primary: #9FC088;
+        --color-light-primary: #E9C891;
+        --color-dark-primary: #8A8635;
+        --color-complementer: #E8C07D;
+        --color-light-complementer: #E9C891;
+        --color-dark-complementer: #E8C07D;
+    }
+
+    [data-theme="blue"] {
+        --color-primary: #3DA5D9;
+        --color-light-primary: #73BFB8;
+        --color-dark-primary: #2364AA;
+        --color-complementer: #FEC601;
+        --color-light-complementer: #FEC601;
+        --color-dark-complementer: #EA7317;
+    }
+}
+
+/*
+    Custom classes:
+*/
 @layer components {
-    /* add styles here */
+    .card {
+        @apply mb-8 sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 text-center bg-lightBgColor rounded-md shadow-md;
+    }
+    .round-img {
+        @apply w-[6rem] rounded-full ring ring-lightPrimary shadow-lg mx-auto mb-2 select-none;
+    }
+    .round-btn {
+        @apply font-mono bg-primary text-invTextColor hover:text-invTextColor hover:bg-darkPrimary select-none
+            focus:outline-none focus:ring focus:ring-primary focus:text-invTextColor rounded-xl shadow-sm px-3 pt-[0.20rem] pb-[0.3rem] align-text-bottom tracking-wider mx-auto;
+    }
+    .title1 {
+        @apply font-mono text-xl text-center font-medium text-darkTextColor selection:bg-lightPrimary mt-2 mb-4 tracking-widest;
+    }
+    .title2 {
+        @apply font-mono font-medium text-textColor mb-4 selection:bg-lightPrimary;
+    }
+    .card-content {
+        @apply font-mono text-textColor selection:bg-lightPrimary text-justify mb-8 leading-relaxed tracking-wider;
+    }
+    .dropdown-btn {
+        @apply float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8
+      text-invTextColor hover:text-invTextColor hover:bg-darkPrimary selection:bg-darkPrimary;
+    }
+    .dropdown-item {
+        @apply block px-4 py-2 hover:text-lightPrimary hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+    }
 }
