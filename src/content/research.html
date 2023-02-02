@@ -9,52 +9,56 @@
   <link href="../../build/css/tailwind-out.css" rel="stylesheet">
   <link href="../css/flowbite.min.css" rel="stylesheet">
 </head>
-<header>
-    <nav class="bg-primary px-6 h-8">
+<header class="sticky top-0 z-50">
+  <nav class="bg-primary px-6 h-8">
       <!-- Dropdown menu -->
       <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700">
         <ul class="py-2 text-sm text-textColor dark:text-invTextColor" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="../../index.html" class="dropdown-item">Home</a>
+            <a href="../../index.html" class="dropdown-item">Home_</a>
           </li>
           <li>
-            <a href="./biography.html" class="dropdown-item">Biography</a>
+            <a href="./biography.html" class="dropdown-item">Biography_</a>
           </li>
           <li>
-            <a href="./research.html" class="dropdown-item">Research</a>
+            <a href="./research.html" class="dropdown-item">Research_</a>
           </li>
           <li>
-            <a href="./programming-projects.html" class="dropdown-item">Programming</a>
+            <a href="./programming-projects.html" class="dropdown-item">Programming_</a>
           </li>
           <li>
-            <a href="./teaching.html" class="dropdown-item">Teaching</a>
+            <a href="./teaching.html" class="dropdown-item">Teaching_</a>
           </li>
           <li>
-            <a href="./music.html" class="dropdown-item">Music</a>
+            <a href="./music.html" class="dropdown-item">Music_</a>
           </li>
           <li>
-            <a href="./other.html" class="dropdown-item">Other</a>
+            <a href="./other.html" class="dropdown-item">Other_</a>
           </li>
         </ul>
       </div>
       <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="dropdown-btn" href="">
-        Menu
+        <div class="space-y-2">
+          <span class="block w-6 h-[0.25rem] bg-invTextColor"></span>
+          <span class="block w-4 h-[0.2rem] bg-invTextColor"></span>
+        </div>
       </button>
     </nav>
-    <div class="h-1 bg-lightPrimary"></div>
+    <div class="h-1 bg-gradient-to-r from-darkPrimary to-lightPrimary"></div>
 </header>
 <body>
-  <div class="bg-bgColor py-6 w-full">
+  <div class="bg">
     <div class="card">
       <img class="round-img" src="../../resources/profilZoli.jpg" alt="profil_picture">
       <h2 class="title2">Zoltán Simon</h2>
-      <h1 class="title1">Research</h1>
+      <h1 class="title1">C:\> Research</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         ...
       </p>
       <a class="round-btn"
       href="../../index.html">
-        Home
+        Home_
       </a>
     </div>
   </div>
@@ -64,7 +68,7 @@
 </body>
 <footer>
   <div class="bg-lightBgColor w-full">
-    <div class="bg-primary h-4 w-full"></div>
+    <div class="bg-gradient-to-r from-primary to-lightPrimary h-4 w-full"></div>
     <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 bg-lightBgColor">
       <div class="flex">
         <div class="mx-auto flex-auto grow">

@@ -29,6 +29,9 @@
     Custom classes:
 */
 @layer components {
+    .bg {
+        @apply bg-fixed bg-bgColor bg-[url('../../resources/background_graphics.svg')] bg-cover py-6 w-full;
+    }
     .card {
         @apply mb-8 sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 text-center bg-lightBgColor rounded-md shadow-md;
     }
@@ -45,14 +48,17 @@
     .title2 {
         @apply font-mono font-medium text-textColor mb-4 selection:bg-lightPrimary;
     }
+    .card-divider {
+        @apply bg-lightTextColor w-full h-[0.5px] mb-3;
+    }
     .card-content {
-        @apply font-mono text-textColor selection:bg-lightPrimary text-justify mb-8 leading-relaxed tracking-wider;
+        @apply font-mono text-textColor selection:bg-lightPrimary text-justify mb-8 leading-relaxed tracking-wider first-letter:text-2xl;
     }
     .dropdown-btn {
-        @apply float-right font-mono text-xl tracking-wider px-4 py-0.5 h-8
+        @apply float-right font-mono text-xl tracking-wider px-2 py-0.5 h-8
       text-invTextColor hover:text-invTextColor hover:bg-darkPrimary selection:bg-darkPrimary;
     }
     .dropdown-item {
-        @apply block px-4 py-2 hover:text-lightPrimary hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+        @apply font-mono text-textColor leading-relaxed tracking-wider block px-4 py-2 hover:text-lightPrimary hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
     }
 }

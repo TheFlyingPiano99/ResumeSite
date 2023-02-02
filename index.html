@@ -8,44 +8,48 @@
   </style> 
   <link href="build/css/tailwind-out.css" rel="stylesheet"/>
   <link href="src/css/flowbite.min.css" rel="stylesheet"/>
-</head>
-<header>
+</head> 
+<header class="sticky top-0 z-50">
     <nav class="bg-primary px-6 h-8">
       <!-- Dropdown menu -->
       <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700">
         <ul class="py-2 text-sm text-textColor dark:text-invTextColor" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="src/content/biography.html" class="dropdown-item">Biography</a>
+            <a href="src/content/biography.html" class="dropdown-item">Biography_</a>
           </li>
           <li>
-            <a href="src/content/research.html" class="dropdown-item">Research</a>
+            <a href="src/content/research.html" class="dropdown-item">Research_</a>
           </li>
           <li>
-            <a href="src/content/programming-projects.html" class="dropdown-item">Programming</a>
+            <a href="src/content/programming-projects.html" class="dropdown-item">Programming_</a>
           </li>
           <li>
-            <a href="src/content/teaching.html" class="dropdown-item">Teaching</a>
+            <a href="src/content/teaching.html" class="dropdown-item">Teaching_</a>
           </li>
           <li>
-            <a href="src/content/music.html" class="dropdown-item">Music</a>
+            <a href="src/content/music.html" class="dropdown-item">Music_</a>
           </li>
           <li>
-            <a href="src/content/other.html" class="dropdown-item">Other</a>
+            <a href="src/content/other.html" class="dropdown-item">Other_</a>
           </li>
         </ul>
       </div>
       <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="dropdown-btn" href="">
-        Menu
+        <div class="space-y-2">
+          <span class="block w-6 h-[0.25rem] bg-invTextColor"></span>
+          <span class="block w-4 h-[0.2rem] bg-invTextColor"></span>
+        </div>
       </button>
     </nav>
-    <div class="h-1 bg-lightPrimary"></div>
-</header>
-<body>
-  <div class="bg-bgColor py-6 w-full">
-    <div class="mb-8 sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 text-center bg-lightBgColor rounded-md shadow-md">
+    <div class="h-1 bg-gradient-to-r from-darkPrimary to-lightPrimary"></div>
+</header> 
+<body> 
+  <div class="bg">
+    <div class="card"> 
       <img src="resources/profilZoli.jpg" alt="profil_picture" class="round-img">
       <h2 class="title2">Zoltán Simon</h2>
-      <h1 class="title1">Welcome to my website!</h1>
+      <h1 class="title1">C:\> Welcome to my website!</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         Hi, I'm Zoli! I study computer engineering at the Budapest University of Technology and Economics.
         Having successfully completed the undergraduate program I am currently pursuing master's degree.
@@ -55,12 +59,13 @@
       </p>
       <a class="round-btn"
       href="src/content/biography.html">
-        Biography
+        Biography_
       </a>
     </div>
 
     <div class="card">
       <h1 class="title1">Research</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         Take a look at my scientific research pojects and publications!
       </p>
@@ -72,6 +77,7 @@
 
     <div class="card">
       <h1 class="title1">Programming</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         My software projects are available on Github.
         Here I have listed some of these projects.
@@ -84,9 +90,10 @@
 
     <div class="card">
       <h1 class="title1">Teaching</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         I publish learning material about programming.
-      </p>
+      </p> 
       <a class="round-btn"
       href="src/content/teaching.html">
         Read more..
@@ -95,6 +102,7 @@
 
     <div class="card">
       <h1 class="title1">Music</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         I create my own music. I provide sheet music for some of my compositions.
       </p>
@@ -106,6 +114,7 @@
 
     <div class="card">
       <h1 class="title1">Other</h1>
+      <div class="card-divider"></div>
       <p class="card-content">
         The things that do not fit into any of the above listed categories but I wanted to share anyway.
       </p>
@@ -122,7 +131,7 @@
 </body>
 <footer>
   <div class="bg-lightBgColor w-full">
-    <div class="bg-primary h-4 w-full"></div>
+    <div class="bg-gradient-to-r from-primary to-lightPrimary h-4 w-full"></div>
     <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 bg-lightBgColor">
       <div class="flex">
         <div class="mx-auto flex-auto grow">
