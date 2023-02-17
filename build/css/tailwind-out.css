@@ -836,6 +836,33 @@ input[type="range"]::-ms-fill-lower {
   --color-dark-complementer: #EA7317;
 }
 
+[data-theme="yellow"] {
+  --color-primary: #eeba0b;
+  --color-light-primary: #f4e409;
+  --color-dark-primary: #c36f09;
+  --color-complementer: #a63c06;
+  --color-light-complementer: #c36f09;
+  --color-dark-complementer: #710000;
+}
+
+[data-theme="violet"] {
+  --color-primary: #d55d92;
+  --color-light-primary: #ea698b;
+  --color-dark-primary: #c05299;
+  --color-complementer: #571089;
+  --color-light-complementer: #6411ad;
+  --color-dark-complementer: #47126b;
+}
+
+[data-theme="red"] {
+  --color-primary: #a4133c;
+  --color-light-primary: #c9184a;
+  --color-dark-primary: #800f2f;
+  --color-complementer: #ffb3c1;
+  --color-light-complementer: #ffccd5;
+  --color-dark-complementer: #ff8fa3;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1490,11 +1517,6 @@ input[type="range"]::-ms-fill-lower {
 .bg-invTextColor {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-bgColor {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
