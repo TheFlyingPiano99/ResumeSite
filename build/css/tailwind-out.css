@@ -1739,17 +1739,12 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-lightPrimary:hover {
-  background-color: var(--color-light-primary);
-}
-
-.hover\:bg-lightTextColor:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
 .hover\:text-lightPrimary:hover {
   color: var(--color-light-primary);
+}
+
+.hover\:text-darkPrimary:hover {
+  color: var(--color-dark-primary);
 }
 
 .hover\:text-blue-600:hover {
@@ -1760,10 +1755,6 @@ input[type="range"]::-ms-fill-lower {
 .hover\:text-gray-600:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-darkPrimary:hover {
-  color: var(--color-dark-primary);
 }
 
 .selection\:hover\:bg-lightTextColor:hover *::-moz-selection {
