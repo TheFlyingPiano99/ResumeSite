@@ -1155,12 +1155,27 @@ input[type="range"]::-ms-fill-lower {
   background-color: var(--color-light-primary);
 }
 
-.card-image {
-  margin-left: auto;
-  margin-right: auto;
+.card-image-container {
   margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-container > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.card-image {
+  margin-bottom: 0.5rem;
+  aspect-ratio: auto;
   height: auto;
-  max-width: 28rem;
+  max-height: 300px;
+  width: auto;
+  flex: 0 1 auto;
 }
 
 .dropdown-btn {
