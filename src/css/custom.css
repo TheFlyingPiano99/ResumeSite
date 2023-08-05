@@ -81,6 +81,9 @@
     .card-content {
         @apply font-mono text-textColor selection:bg-lightPrimary text-justify mb-8 leading-relaxed tracking-wider first-letter:text-2xl;
     }
+    .card-image {
+        @apply h-auto max-w-md mx-auto bottom-4
+    }
     .dropdown-btn {
         @apply float-right font-mono text-xl tracking-wider px-2 py-0.5 h-8
       text-invTextColor hover:text-invTextColor hover:bg-darkPrimary selection:bg-darkPrimary;
