@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" data-theme="red" class="bg-lightBgColor">
+<head>
+  <title>Zoltán Simon</title>
+  <link rel="icon" href="../../resources/profilZoli.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Zoltán Simon zoltan simon zoltansimon bme vik iit research science programming teaching music project resume resumesite">
+  <meta name="description" content="Resume site of Zoltán Simon.">
+  <meta name="author" content="Zoltán Simon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+  </style>
+  <link href="../../../build/css/tailwind-out.css" rel="stylesheet">
+  <link href="../../css/flowbite.min.css" rel="stylesheet">
+</head>
+<header class="sticky top-0 z-50">
+  <nav class="bg-primary px-6 h-8">
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-textColor dark:text-invTextColor" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="../../index.html" class="dropdown-item">Home_</a>
+          </li>
+          <li>
+            <a href="./biography.html" class="dropdown-item">Biography_</a>
+          </li>
+          <li>
+            <a href="./research.html" class="dropdown-item">Research_</a>
+          </li>
+          <li>
+            <a href="./teaching.html" class="dropdown-item">Teaching_</a>
+          </li>
+          <li>
+            <a href="./music.html" class="dropdown-item">Music_</a>
+          </li>
+          <li>
+            <a href="./other.html" class="dropdown-item">Other_</a>
+          </li>
+        </ul>
+      </div>
+      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="dropdown-btn" href="">
+        <div class="space-y-2">
+          <span class="block w-6 h-[0.25rem] bg-invTextColor"></span>
+          <span class="block w-4 h-[0.2rem] bg-invTextColor"></span>
+        </div>
+      </button>
+    </nav>
+    <div class="h-1 bg-gradient-to-r from-darkPrimary to-lightPrimary"></div>
+</header>
+<body>
+  <div class="bg">
+    <div class="card">
+      <h1 class="title1">C:\> Quantum wavepacket simulation</h1>
+      <div class="card-divider"></div>
+      <p class="card-content">
+        In quantum mechanics, the wave function describes the state of a physical system.
+        In the non-relativistic case, the time evolution of the wave function is described by the time-dependent Schrödinger equation.
+        In 1982, D Kosloff and R Kosloff proposed a method [1] to solve the time-dependent Schrödinger equation efficiently using Fourier transformation.
+        In 2020, Géza István Márk published a paper [2] describing a computer program for the interactive solution of the time-dependent and stationary two-dimensional (2D) Schrödinger equation, which they used to simulate transport phenomena in carbon nanostructures [3].
+        Some details of quantum phenomena are only observable by calculating with all the spatial dimensions.
+        We found it worth stepping out from the two-dimensional plane and investigating these phenomena in three dimensions.
+        We implemented said method for the three-dimensional case to simulate the time evolution of the wave function.
+        We used our implementation to simulate typical quantum phenomena using wave packet dynamics.
+        First, we tried the method on analytically describable cases, such as the simulation of the double-slit experiment, then we investigated the working of flash memory.
+        We used raytraced volumetric visualization to render the resulting probability density.
+        In our work, we introduce the basics of quantum mechanics.
+        We describe the method in use in detail and showcase our simulation results.
+      </p>
+      <p class="card-content">
+        [1] Kosloff, D., & Kosloff, R. (1983). A fourier method solution for the time dependent Schrödinger equation as a tool in molecular dynamics. Journal of Computational Physics, 52(1), 35–53. https://doi.org/https://doi.org/10.1016/0021-9991(83)90015-3
+        <br>
+        [2] Márk, G. I. (2020). Web-Schrödinger: Program for the interactive solution of the time dependent and stationary two dimensional (2D) Schrödinger equation.
+        <br>
+        [3] Márk Géza I. and Vancsó, P. and B. L. P. and K. D. G. and C. L. A. and C. A. and R. K. Yu. and L. P. (2016). Wave Packet Dynamical Calculations for Carbon Nanostructures. In S. A. Maffucci Antonio and Maksimenko (Ed.), Fundamental and Applied Nano-Electromagnetics (pp. 89–102). Springer Netherlands. https://doi.org/10.1007/978-94-017-7478-9_5
+      </p>
+      <div class="card-image-container">
+        <img class="card-image", src="../../../resources/quantumImages/probability_density_time_development.gif", alt="Probability density time development">
+        <img class="card-image" src="../../../resources/quantumImages/preview_image.png" alt="Simulation of the double-slit experiment">
+        <img class="card-image" src="../../../resources/quantumImages/probability_evolution_1000.png" 
+        alt="Evolution if probability of the particle being found in first or second half of the simulated area during the double-slit experiment">
+        
+      </div>
+      <br>
+      <br>
+      <a class="round-btn"
+      href="https://github.com/TheFlyingPiano99/WaveFunctionSimPython/tree/master" target="_blank">
+        Go to the Github page_
+      </a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="src/scripts/dark-theme.js"></script>
+  <script type="text/javascript" src="../scripts/flowbite.min.js"></script>
+</body>
+<footer>
+  <div class="bg-lightBgColor w-full">
+    <div class="bg-gradient-to-r from-primary to-lightPrimary h-4 w-full"></div>
+    <div class="sm:mx-[5%] mx-[5%] md:mx-[10%] lg:mx-[20%] px-[5%] py-6 bg-lightBgColor">
+      <div class="flex">
+        <div class="mx-auto flex-auto grow">
+          <h3 class="font-mono font-medium text-textColor selection:bg-lightPrimary mb-3 tracking-widest">
+            Contact
+          </h3>
+          <ul class="list-disc text-lightTextColor  text-xs tracking-wider">
+            <li class="list-item mb-2">
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://github.com/TheFlyingPiano99">github.com/TheFlyingPiano99</a>
+            </li>
+            <li class="list-item mb-2">
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://soundcloud.com/flying-piano-842623231">soundcloud.com/flying-piano</a>
+            </li>
+            <li class="list-item mb-2">
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="mailto:zoltan.simon@edu.bme.hu">send E-mail</a>
+            </li>
+          </ul>
+          </div>
+        <div class="mx-auto flex-auto grow pl-6">
+          <h3 class="font-mono font-medium text-textColor selection:bg-lightPrimary mb-3 tracking-widest">
+            Association
+          </h3>
+          <ul class="list-disc text-lightTextColor  text-xs tracking-wider">
+            <li class="list-item mb-2">
+              <a class="hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.bme.hu/?language=en">Budapest University of Technology and Economics</a>
+            </li>
+            <li class="list-item mb-2">
+              <a class="hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.vik.bme.hu/en/">Faculty of Electrical Engineering and Informatics</a>
+            </li>
+            <li class="list-item mb-2">
+              <a class=" hover:text-lightPrimary selection:bg-lightPrimary selection:hover:bg-lightTextColor font-mono" href="https://www.iit.bme.hu/?language=en">Department of Control Engineering and Information Technology</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center pt-11 font-extralight selection:bg-lightPrimary text-lightTextColor selection:bg-selectColor text-xs font-mono tracking-wider">Zoltán Simon (2023)</p>
+    </div>
+  </div>
+</footer>
+</html> 
