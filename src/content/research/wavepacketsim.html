@@ -54,25 +54,28 @@
       <h1 class="title1">C:\> Quantum wavepacket simulation</h1>
       <div class="card-divider"></div>
       <p class="card-content">
+
         In quantum mechanics, the wave function describes the state of a physical system.
         In the non-relativistic case, the time evolution of the wave function is described by the time-dependent Schrödinger equation.
         In 1982, D Kosloff and R Kosloff proposed a method [1] to solve the time-dependent Schrödinger equation efficiently using Fourier transformation.
-        In 2020, Géza István Márk published a paper [2] describing a computer program for the interactive solution of the time-dependent and stationary two-dimensional (2D) Schrödinger equation, which they used to simulate transport phenomena in carbon nanostructures [3].
-        Some details of quantum phenomena are only observable by calculating with all the spatial dimensions.
+        In 2020, Géza István Márk published a paper [2] describing a computer program for the interactive solution of the time-dependent and stationary two-dimensional (2D) Schrödinger equation.
+        Some details of quantum phenomena are only observable by calculating with all three spatial dimensions.
         We found it worth stepping out from the two-dimensional plane and investigating these phenomena in three dimensions.
-        We implemented said method for the three-dimensional case to simulate the time evolution of the wave function.
+        We implemented the said  method for the three-dimensional case to simulate the time evolution of the wave function.
         We used our implementation to simulate typical quantum phenomena using wave packet dynamics.
-        First, we tried the method on analytically describable cases, such as the simulation of the double-slit experiment, then we investigated the working of flash memory.
+        First, we tried the method on analytically describable cases, such as the simulation of the double-slit experiment, then we investigated the operation of flash memory.
         We used raytraced volumetric visualization to render the resulting probability density.
         In our work, we introduce the basics of quantum mechanics.
         We describe the method in use in detail and showcase our simulation results.
         <br>
         <br>
+        References
+        <br>
         [1] Kosloff, D., & Kosloff, R. (1983). A fourier method solution for the time dependent Schrödinger equation as a tool in molecular dynamics. Journal of Computational Physics, 52(1), 35–53. https://doi.org/https://doi.org/10.1016/0021-9991(83)90015-3
         <br>
-        [2] Márk, G. I. (2020). Web-Schrödinger: Program for the interactive solution of the time dependent and stationary two dimensional (2D) Schrödinger equation.
-        <br>
-        [3] Márk Géza I. and Vancsó, P. and B. L. P. and K. D. G. and C. L. A. and C. A. and R. K. Yu. and L. P. (2016). Wave Packet Dynamical Calculations for Carbon Nanostructures. In S. A. Maffucci Antonio and Maksimenko (Ed.), Fundamental and Applied Nano-Electromagnetics (pp. 89–102). Springer Netherlands. https://doi.org/10.1007/978-94-017-7478-9_5
+        [2] Márk, G. I. (2020). Web-Schrödinger: Program for the interactive solution of the time dependent and stationary two dimensional (2D) Schrödinger equation. https://doi.org/10.48550/arXiv.2004.10046
+
+  
       </p>
       <div class="card-image-container">
         <img class="card-image", src="https://media.githubusercontent.com/media/TheFlyingPiano99/ResumeSite/main/resources/quantumImages/probability_density_time_development.gif?token=ANTEMV5TII2OBWSLNLPTUMDFDAHQ2", alt="Probability density time development">
