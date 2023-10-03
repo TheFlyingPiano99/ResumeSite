@@ -1,1 +1,2 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
+resources/quantumImages/probability_density_time_development_per_axis.gif filter=lfs diff=lfs merge=lfs -text
