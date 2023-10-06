@@ -1163,6 +1163,17 @@ input[type="range"]::-ms-fill-lower {
   justify-content: center;
 }
 
+.card-media {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+  flex: 0 1 auto;
+}
+
 .card-image {
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
