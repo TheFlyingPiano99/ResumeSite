@@ -82,10 +82,13 @@
         @apply font-mono text-textColor selection:bg-lightPrimary text-justify mb-8 leading-relaxed tracking-wider first-letter:text-2xl;
     }
     .card-image-container {
-        @apply flex flex-wrap items-center space-x-2 justify-center mb-5
+        @apply flex flex-wrap items-center justify-center mb-5
+    }
+    .card-media {
+        @apply flex-initial w-auto h-auto aspect-auto max-h-[300px] mb-2 ml-2 mr-2
     }
     .card-image {
-        @apply flex-initial w-auto h-auto aspect-auto max-h-[300px] mb-2
+        @apply flex-initial w-auto h-auto aspect-auto max-h-[300px] mb-2 ml-2 mr-2
     }
     .dropdown-btn {
         @apply float-right font-mono text-xl tracking-wider px-2 py-0.5 h-8
